@@ -15,6 +15,11 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Update="DatingApp-SPA\src\typings.d.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
     <TypeScriptCompile Update="DatingApp-SPA\src\app\_services\error.interceptor.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
