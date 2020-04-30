@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DatingApp-SPA\src\app\routes.ts" />
     <None Remove="DatingApp-SPA\src\app\_services\error.interceptor.ts" />
     <None Remove="DatingApp-SPA\src\typings.d.ts" />
   </ItemGroup>
@@ -26,6 +27,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DatingApp-SPA\src\app\_guards\" />
   </ItemGroup>
 
 
