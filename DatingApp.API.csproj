@@ -7,7 +7,9 @@
 
   <ItemGroup>
     <None Remove="DatingApp-SPA\src\app\routes.ts" />
+    <None Remove="DatingApp-SPA\src\app\_guards\prevent-unsaved-changes.guard.ts" />
     <None Remove="DatingApp-SPA\src\app\_resolvers\member-detail.resolver.ts" />
+    <None Remove="DatingApp-SPA\src\app\_resolvers\member-edit.resolver.ts" />
     <None Remove="DatingApp-SPA\src\app\_resolvers\member-list.resolver.ts" />
     <None Remove="DatingApp-SPA\src\app\_services\error.interceptor.ts" />
     <None Remove="DatingApp-SPA\src\typings.d.ts" />
@@ -35,10 +37,12 @@
 
   <ItemGroup>
     <Folder Include="DatingApp-SPA\src\app\_models\" />
-    <Folder Include="DatingApp-SPA\src\app\_guards\" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Update="DatingApp-SPA\src\app\_resolvers\member-edit.resolver.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Update="DatingApp-SPA\src\app\_resolvers\member-list.resolver.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
